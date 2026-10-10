@@ -1,0 +1,96 @@
+/* =====================================================
+   الأساس المشترك: الألوان (variables) والـ reset والخط والأزرار .btn والعنوان الصغير والـ .section
+   المسؤولة: صاحبة الـ repo (باقي الأعضاء بيستخدموه ومبيعدلوش فيه)
+   ===================================================== */
+
+/* ===== الألوان والخط ===== */
+:root {
+  --bg: #0d0b09;
+  --card: #17130f;
+  --gold: #c9a45c;
+  --text: #f3ece0;
+  --muted: #a89a85;
+}
+
+/* ===== إعدادات عامة ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* ===== عناصر بتتكرر ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: var(--gold);
+  color: var(--bg);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--gold);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.logo {
+  font-size: 1.8rem;
+  letter-spacing: 6px;
+  color: var(--gold);
+}
+
+.small-title {
+  display: block;
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* ===== الأقسام العامة ===== */
+.section {
+  padding: 60px 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 20px;
+  }
+}
