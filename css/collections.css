@@ -1,4 +1,87 @@
 /* =====================================================
    الأقسام (Collections)
-   المسؤول: Member-3
+   المسؤول: Mahmoud Mohamed Mostafa
    ===================================================== */
+   .collections{
+      width: 100%;
+      height: auto;
+   }
+
+
+   .titel h4{
+      color: rgba(145, 124, 98, 1.00);
+   }
+
+   .coll-img{
+      margin-top: 50px;
+   }
+
+
+   .coll-card{
+      background-color: rgba(23, 20, 13, 1.00);
+      cursor: pointer;
+      height: 330px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      .card-title{
+         color: white;
+         font-size: 1.2rem;
+      }
+
+      .card-text{
+         color: rgba(145, 124, 98, 1.00);
+
+      }
+   }
+
+   .coll-card:hover{
+      transform: translateY(-10px);
+      background-color:  rgba(145, 124, 98, 1.00);
+      .card-title{
+         color: black;
+      }
+
+      .card-text{
+         color: white;
+      }
+
+   }
+
+   .care{
+      height: 225px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+   }
+
+ @media (max-width: 1140px) {
+   .care{
+      height: 170px;
+   }
+ }
+
+  @media (max-width: 960px) {
+   .coll-card{
+      height: 270px;
+   }   
+   
+   .care{
+      height: 130px;
+      object-fit: cover;
+   } 
+   }
+
+   @media (max-width: 720px) {
+      .coll-img{
+         width: 70%;
+         margin: auto;
+      }
+   .coll-card{
+      height: auto;
+      margin-top: 20px;
+   }   
+   
+   .care{
+      height: 130px;
+      object-fit: cover;
+   } 
+}
