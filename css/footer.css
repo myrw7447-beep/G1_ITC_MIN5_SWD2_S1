@@ -1,4 +1,37 @@
 /* =====================================================
    Footer
-   المسؤول: Member-5
+   المسؤول: Marwa Ghazal
    ===================================================== */
+
+.site-footer {
+  background-color: black;
+  border-top: 1px solid rgba(201, 164, 92, 0.35);
+}
+
+.site-footer h5 {
+  color: var(--gold);
+}
+
+.site-footer a:hover {
+  color: var(--gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(168, 154, 133, 0.2);
+}
+
+.footer-bottom p {
+  color: rgba(145, 124, 98, 1.00);
+}
+
+@media (max-width: 960px) {
+  .site-footer .col-md-12 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-footer {
+    text-align: center;
+  }
+}
