@@ -1,4 +1,98 @@
 /* =====================================================
    العطور الأكثر طلبًا
-   المسؤول: Member-2
+   المسؤول: رحمة ايمن 
+
    ===================================================== */
+.best-sellers .small-title {
+  color: rgba(145, 124, 98, 1.00);
+}
+
+.bs-card {
+  background-color: rgba(23, 20, 13, 1.00);
+  border: 1px solid rgba(201, 164, 92, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bs-card .card-img-top {
+  height: 230px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.bs-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.bs-card .card-title {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.bs-card .card-text {
+  color: rgba(145, 124, 98, 1.00);
+  margin-bottom: 12px;
+}
+
+.bs-price {
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+.bs-card .btn {
+  margin-top: auto;
+}
+
+/* ===== Hover (نفس أسلوب باقي الأقسام) ===== */
+.bs-card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(145, 124, 98, 1.00);
+}
+
+.bs-card:hover .card-title,
+.bs-card:hover .bs-price {
+  color: black;
+}
+
+.bs-card:hover .card-text {
+  color: white;
+}
+
+.bs-card:hover .btn {
+  background-color: var(--bg);
+  border-color: var(--bg);
+  color: var(--gold);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1140px) {
+  .bs-card .card-img-top {
+    height: 190px;
+  }
+}
+
+@media (max-width: 960px) {
+  .best-sellers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .best-sellers .row {
+    width: 80%;
+    margin: auto;
+  }
+
+  .bs-card .card-img-top {
+    height: 220px;
+  }
+}
