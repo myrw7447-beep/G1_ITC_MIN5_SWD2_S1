@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 530px;
+  min-height: calc(100vh - 84px);
   overflow: hidden;
   background: url("../images/hero-oriental-amber.webp") center 47% / cover no-repeat;
 
@@ -76,4 +76,36 @@
 .btn-outline-light{
   background: transparent;
   color:#f7f0e2 ;
+}
+@media (max-width: 575.98px) {
+
+
+  .hero {
+    min-height: 570px;
+    background-position: 60% center;
+  }
+
+  .hero-shade {
+    background: rgba(12, 9, 7, 0.72);
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
 }
