@@ -2,3 +2,70 @@
    Navbar
    المسؤول: Member-1
    ===================================================== */
+:root {
+  --black: #0d0b09;
+  --black-soft: #17110d;
+  --gold: #c9a65e;
+  --gold-light: #d5b66f;
+  --cream: #f7f0e2;
+  --text-muted: #c6b9a5;
+}
+  .site-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: #0b0a09;
+    border-bottom: 1px solid rgba(201, 166, 94, 0.15);
+}
+
+.site-header .navbar {
+  min-height: 84px;
+}
+
+.brand {
+  color: var(--gold) !important;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.27em;
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  gap: 9px;
+}
+
+.nav-link {
+  color: #e5ddd0 !important;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--gold) !important;
+}
+
+.btn {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 0.8rem 1.45rem;
+}
+.btn-gold {
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  color: #17110a;
+}
+
+.btn-gold:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+  color: var(--black-soft); 
+  transition: 0.05s;
+  transform: scale(1.05);
+}
+
+.header-cta {
+  white-space: nowrap;
+  padding: 0.72rem 1.5rem;
+}
